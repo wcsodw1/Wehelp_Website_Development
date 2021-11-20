@@ -19,10 +19,12 @@
         // Response 物件, 代表伺服器的回應
       })  
     */
-    let src = "https://wcsodw1.github.io/Wehelp_Website_Development/README.md";
+    // 1.let src = "https://wcsodw1.github.io/Wehelp_Website_Development/README.md";
+    let src = "https://wcsodw1.github.io/Wehelp_Website_Development/data/products.,json";
+
     fetch(src).then(function (response) {
-      //console.log(response); // Print出response
-      return response.text(); // 用字串的方式取回資料
+      //console.log(response); // 1.Print出response
+      return response.text(); //  2.用字串的方式取回資料
     }).then(function (result) {
       console.log("最終的資料", result);
     });
