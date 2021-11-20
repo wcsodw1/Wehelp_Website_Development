@@ -15,13 +15,16 @@
     list.innerHTML = "...Loading ...";
     // 透過AJAX fetch API 連線到遠端的網址, 抓取資料
     /*
-     fetch(網址).then(function(response){
-       // Response 物件, 代表伺服器的回應
-     })  
+      fetch(網址).then(function(response){
+        // Response 物件, 代表伺服器的回應
+      })  
     */
     let src = "https://wcsodw1.github.io/Wehelp_Website_Development/README.md";
     fetch(src).then(function (response) {
-      console.log(response) // Print出response
+      //console.log(response); // Print出response
+      return response.text();
+    }).then(function (result) {
+      console.log("最終的資料", result);
     });
   </script>
 </body>
