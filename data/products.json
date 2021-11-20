@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "name" : "Iphone 13 ProMax",
+    "Price" : 54800
+  },
+  {
+    "name" : "Apple MAC pro 16 inch ",
+    "Price" : 42000
+  },
+  {
+    "name":"Apple Watch",
+    "Price": 13500
+  }
+]
