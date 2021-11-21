@@ -21,7 +21,6 @@
     */
     // 1.let src = "https://wcsodw1.github.io/Wehelp_Website_Development/README.md";
     let src = "https://wcsodw1.github.io/Wehelp_Website_Development/data/products.json";
-
     fetch(src).then(function (response) {
       //console.log(response); // 1.Print出response
       //return response.text(); //  2.用字串的方式取回資料
@@ -32,10 +31,14 @@
       // 把抓到的資料放到畫面上
       list.innerHTML = "";
       let product;
+      let sum = 0;
       for (let i = 0; i < result.length; i++) {
         product = result[i];
         list.innerHTML += product.name.bold() + " - " + product.price + "<hr/>";
+        sum += product.price;
       }
+      let avg = sum / result.length;
+      list.innerHTML += "平均售價 : " + avg;
     });
   </script>
 </body>
