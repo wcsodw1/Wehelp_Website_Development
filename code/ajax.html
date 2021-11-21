@@ -27,8 +27,8 @@
       //return response.text(); //  2.用字串的方式取回資料
       return response.json(); // 3.將資料用 JSON的格式詮釋成: 物件和陣列的組合
     }).then(function (result) {
-      //console.log("最終的資料", result);
       //console.log("最終的資料", result.toUpperCase()); // 字串的形式很不好用
+      console.log("最終的資料", result);
       // 把抓到的資料放到畫面上
       list.innerHTML = "";
       let product;
