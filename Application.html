@@ -1,7 +1,29 @@
 <html>
 
 <head>
-  <script>
+  <meta charset="utf-8" />
+  <style type="text/css">
+    #login {
+      width: 300px;
+    }
+
+    #open {
+      margin: 0;
+      cursor: pointer;
+      background: yellow;
+      color: black;
+      padding: 5px;
+    }
+
+    form {
+      display: none;
+      padding: 3px;
+      border: 1px solid black;
+    }
+  </style>
+
+  <script> // 1. 
+    // 2.Move in and back
     function moveleft() {
       var h = document.getElementById("myH2");
       h.style.position = "absolute";
@@ -12,20 +34,36 @@
       h.style.position = "relative";
     }
   </script>
-  <title> Github HTML </title>
+
   <style type="text/css">
     div,
-    p {
+    Y {
       text-align: center;
       color: rgb(34, 0, 128);
       margin-left: 70pt;
       font-size: 20pt;
       font-weight: 900;
     }
+
+    x {
+      text-align: left;
+      color: rgb(128, 62, 0);
+      margin-left: 10pt;
+      font-size: 12pt;
+      font-weight: 900;
+    }
   </style>
+  <script>
+    $(document).ready(function () {
+      $('#open').click(function () {
+        $('#login form').slideToggle('300');
+      });
+    });
+  </script>
 </head>
 
 <body>
+
   <h2 id="myH2" onmouseover="moveleft()" onmouseout="moveback()"> WeHelp Camp 申請
   </h2>
   <h1>
@@ -33,6 +71,24 @@
     </div>
   </h1>
   <hr />
+
+  <div id="login">
+    <p id="open">登入</p>
+    <form>
+      <p>
+        使用者名稱:
+        <input type="text" id="username" />
+      </p>
+      <p>
+        使用者密碼:
+        <input type="text" id="password" />
+      </p>
+      <p>
+        <input type="submit" id="button" value="登入" />
+      </p>
+    </form>
+  </div>
+
   <h3> 1.兩百字內的個人簡介 : </h3>
   澎澎老師您好, 我是David Lin 林守為, 畢業於中原大學電子工程學系, 畢業後曾在AIA人工智慧學校就讀精修AI演算法以及其實際應用<br>
   大概在4年前左右開始較頻繁接觸軟體的世界, 主要研究於資料科學(Data Analyze)<br>
@@ -74,6 +130,7 @@
   感謝澎澎開這個Camp給許多人在轉職或轉方向的幫助, 期待自己的進步跟成長,<br>
   也想祝福Wehelp順利茁壯, 有機會也不排斥成為Wehelp共同夥伴參與教學.
   <hr />
+
 </body>
 
 </html>
