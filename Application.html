@@ -49,6 +49,18 @@
     }
   </style>
 
+  <style type="text/css">
+    div,
+    A {
+      text-align: left;
+      color: rgb(128, 62, 0);
+      margin-left: 10pt;
+      background: rgb(231, 198, 89);
+      font-size: 12pt;
+      font-weight: 900;
+    }
+  </style>
+
 
 
   <style type="text/css">
@@ -195,7 +207,22 @@
     }
   </script>
 
-  <script> // 20211125 : 
+  <script> // 20211125 Floating the word
+    $(document).ready(function () {
+      $('p').animate({
+        left: '200px',
+        fontSize: '20px',
+        opacity: .8
+      }, 2000);
+      $('Z').click(function () {
+        $(this).animate({
+          left: '+=50px'
+        }, 1000);
+      });
+    });
+  </script>
+
+  <script> // 20211125 : Click and show the word
     $(document).ready(function () {
       $('p.more').hide();
       $('a.short').hide();
@@ -214,6 +241,8 @@
       });
     });
   </script>
+
+
 
 
 </head>
