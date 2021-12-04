@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<HTML>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device=width, initial-scale=1, maximum=scale=1">
+    <title>Form 表單設計與驗證</title>
+    <style type="text/css">
+        form {
+            line-height: 2em;
+        }
+
+        form>input,
+        form>select {
+            padding: 5px 10px;
+            border: 2px solid #888888;
+            border-radius: 10px;
+        }
+
+        form>.Done {
+            color: #008800;
+        }
+
+        form>input:valid+.Done {
+            display: inline;
+        }
+
+        form>input:invalid+.Done {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>會員註冊帳號設計</h2>
+    <h3>藉由css 與HTML5輔助表單設計</h3>
+    <form onsubmit="alert('表單送出');">
+        帳號: <input type="text" required placeholder="8 ~ 20 英數字 非特殊符號" pattern="[0-9a-zA-Z]{8,20}" />
+        <span class="Done"> Complete!</span><br />
+        密碼: <input type="password" required placeholder="8 ~ 20 英數字 可特殊符號" pattern="[0-9a-zA-Z]{8,20}" />
+        <span class="Done"> Complete!</span><br />
+        信箱: <input type="email" required />
+        <span class="Done"> Complete!</span><br />
+        電話: <input type="text" required placeholder="10位數字" pattern="[0-9]{10}" /><br />
+        性別:
+        男<input type="radio" name="gender" value="male" required />
+        女<input type="radio" name="gender" value="female" required /><br />
+        生日 : <select required>
+            <option value="">出生年</option>
+            <option value="1993">1993</option>
+            <option value="2021">2021</option>
+        </select><br /><br />
+        <input type="submit" value="送出資料" />
+
+    </form>
+</body>
+
+</HTML>

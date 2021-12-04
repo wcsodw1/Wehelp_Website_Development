@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <title>CSS 教學</title>
+    <style type="text/css">
+        .title {
+            font-weight: bold;
+            font-size: 24px
+        }
+
+        .width400 {
+            width: 400px;
+            padding: 10px;
+            border: 1px dashed blue;
+            margin-top: 10px;
+        }
+
+        .red {
+            color: red
+        }
+
+        .green {
+            color: green
+        }
+
+        .solid_bonder {
+            padding: 10px;
+            border: 1px solid blue;
+            font-weight: bold;
+            font-size: 24px
+        }
+
+        .dashed_bonder {
+            padding: 10px;
+            border: 1px dashed blue;
+            margin-top: 10px;
+            margin-bottom: 10px
+        }
+
+        .box_absPos {
+            position: absolute;
+            right: 0;
+            top: 0px;
+            width: 100px;
+            height: 100px;
+            background-color: grey;
+        }
+
+        .box_relPos {
+            position: relative;
+            left: 100px;
+            top: 0px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(179, 55, 55);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">今天天氣不錯</div>
+    <div class="dashed_bonder">我去公園散步,餵<span class="red">鴿子</span>。</div><br />
+    <div class="box_absPos">
+        <h4>這空間可以放廣告或活動訊息</h4>
+    </div>
+    <div class="box_relPos"></div>
+
+    <div class="solid_bonder">今天沒看到房子,去華山</div>
+    <div class="width400">
+        華山文創有間咖啡廳<span class="green">青鳥</span>。<br />裡面擺設很舒適悠閒 嘿<span style="position:relative;top:-8px">2</span></div>
+
+</body>
+
+</html>
