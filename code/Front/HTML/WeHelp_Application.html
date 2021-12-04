@@ -38,7 +38,7 @@
     }
   </style>
   <style type="text/css">
-    div,
+    div1,
     X {
       text-align: left;
       color: rgb(128, 62, 0);
@@ -241,7 +241,35 @@
       });
     });
   </script>
+  <script>
+    window.onload = function () {
+      var box = document.getElementById("box");
+      // HTML Element 中的scrollLeft 和 ScrollTop屬性
+      //box.scrollTop = 30;
+      window.setInterval(scroll, 50);
+    };
+    function scroll() {
+      box.scrollTop++;
+    }
+  </script>
 
+  <style type="text/css">
+    .box {
+      border: 1px solid #000000;
+      width: 300px;
+      height: 150px;
+      overflow: auto;
+    }
+  </style>
+
+  <style type="text/css">
+    .box2 {
+      border: 1px solid #000000;
+      width: 300px;
+      height: 100px;
+      overflow: auto;
+    }
+  </style>
 
 
 
@@ -252,13 +280,12 @@
     <a href="#" class="more2">
       <Z>申請人 :</Z>
     </a>
-
   </h2>
   <h2 id="myH2">
     <p class="more">
 
       <Y>林守為 SHOU-WEI,LIN<br>
-        <img src="data/img/head2_.PNG" />
+        <img src="../../data/img/head2_.PNG" />
 
       </Y>
   </h2>
@@ -270,13 +297,15 @@
     <h3>
       <p id="open">1.兩百字內的個人簡介 :</p>
     </h3>
+
     <form>
-      <x>
-        澎澎老師您好, 我是David Lin 林守為, 畢業於中原大學電子工程學系, 畢業後曾在AIA人工智慧學校就讀精修AI演算法以及其實際應用<br>
+      <div id="box" class="box">
+
+        澎澎老師您好, 我是David Lin 林守為, 畢業於中原大學電子工程學系, 畢業後曾在AIA人工智慧學校就讀精修AI演算法以及其實際應用
         大概在4年前左右開始較頻繁接觸軟體的世界, 主要研究於資料科學(Data Analyze), AI機器學習(ML)深度學習(DL)以及電腦視覺應用的領域, 如資料分析,人臉偵測, 識別, 姿勢估計(Pose
         Estimation).
+      </div>
 
-      </x>
       <p>
         <input type="submit" id="button" value="收回" />
       </p>
@@ -289,13 +318,13 @@
       <p id="open1">2.為什麼想成為前端、後端、或全端工程師？ </p>
     </h3>
     <form>
-      <X>
+      <div id="box" class="box">
         職涯規劃, 自己最終嚮往是能將網業應用以及AI技術整合成未來有機會創業的Business.<br>
         大學時曾買書(Dreamweaver5)去自學網頁前端(css, HTML5), 近期則是與多位自己創業的朋友聊天中,<br>
         得知這個市場的需求不僅不小, 而且能直接性的幫助到身邊的朋友, 因此, 大概再半年前開始學習後端的技術<br>
         目前的狀態已追完澎澎老師的Python後端課程(有訂閱已及追至最新), 也同時學習了 Javascript, Python Falsk, Django, 初步涉略 node.js, jQuery等技巧.
 
-      </X>
+      </div>
       <p>
         <input type="submit" id="button" value="收回" />
       </p>
@@ -308,12 +337,12 @@
       <p id="open2">3.為了成為軟體工程師，曾經做過什麼努力？ </p>
     </h3>
     <form>
-      <X>
+      <div id="box" class="box">
         目前已經是演匴法工程師, 進入軟體產業前主要在以下幾個方面進修接軌軟體產業的工作 : <br>
         a.澎澎Python基礎課程(Youtube課程) <br>
         b.資料分析訓練班(東海大學推廣部) <br>
         c.AIA人工智慧學校
-      </X>
+      </div>
       <p>
         <input type="submit" id="button" value="收回" />
       </p>
@@ -342,10 +371,10 @@
       </p>
     </h3>
     <form>
-      <X>
+      <div id="box" class="box">
         身為AI演算法工程師, 每天的確都在撞牆跟思考如何解決遇到的問題,
         解決方法不外乎Google找關鍵字能力, 書籍自我學習, 以及同學之間相互討論, youtube教學, 真的卡住了可以請教助教及老師協助.
-      </X>
+      </div>
       <p>
         <input type="submit" id="button" value="收回" />
       </p>
@@ -358,9 +387,9 @@
       <p id="open5">6.是否有想要加入的軟體公司？為什麼想加入該公司？ </p>
     </h3>
     <form>
-      <X>
+      <div id="box2" class="box2">
         目前沒有非常具體一定要去的公司, 但方向上傾向於較有規模的外商或與自己未來發展方向相符的新創公司
-      </X>
+      </div>
       <p>
         <input type="submit" id="button" value="收回" />
       </p>
@@ -373,16 +402,17 @@
       <p id="open6">7.想要對我們說的事情？ </p>
     </h3>
     <form>
-      <X>
+      <div id="box2" class="box2">
         感謝澎澎開這個Camp給許多人在轉職或轉方向的幫助, 期待自己的進步跟成長,
         也想祝福Wehelp順利茁壯, 有機會也不排斥成為Wehelp共同夥伴參與教學.
-      </X>
+      </div>
       <p>
         <input type="submit" id="button" value="收回" />
       </p>
     </form>
   </div>
   <hr />
+
 
   <h2 id="myH2" onmouseover="move()" onmouseout="moveback()"> [ WeHelp Camp 申請 ]
 
