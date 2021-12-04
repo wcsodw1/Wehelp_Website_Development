@@ -12,12 +12,12 @@ https://wcsodw1.github.io/Wehelp_Website_Development/Application.html
 
 
 ## 3. HTML Project Tools : 
-+ Movie:http://127.0.0.1:8887/code/Frontend/HTML/movie.html
++ Video(影片加入效果):http://127.0.0.1:8887/code/Frontend/HTML/movie.html
 
-+ scrollbar : http://127.0.0.1:8887/code/Frontend/HTML/scrollbar.html
++ scrollbar(自動文字滾輪) : http://127.0.0.1:8887/code/Frontend/HTML/scrollbar.html
 
 + Member System Regist form(會員註冊表單) : http://127.0.0.1:8887/code/Frontend/HTML/form.html
 
 + dialogbox(跳出/關閉 對話框) : http://127.0.0.1:8887/code/Frontend/HTML/dialogbox.html
 
-+ scrollbar : http://127.0.0.1:8887/code/Frontend/HTML/scrollbar.html
++ WeHelp_Application(Wehelp申請) : http://127.0.0.1:8887/code/Frontend/HTML/WeHelp_Application.html
