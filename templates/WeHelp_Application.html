@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>2021 WeHelp Camp</title>
+  <link rel=stylesheet type=text/css href="css/WeHelp_Application.css" />
+
+
+  <script src="../data/js/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#open').click(function () {
+        $('#login form').slideToggle('300');
+      });
+    });
+    $(document).ready(function () {
+      $('#open2').click(function () {
+        $('#login2 form').slideToggle('300');
+      });
+    });
+  </script>
+
+  <script> // 1. 
+    // 2.Move in and back
+    function moveleft() {
+      var h = document.getElementById("myH2");
+      h.style.position = "absolute";
+      h.style.left = 0;
+    }
+    function moveback() {
+      var h = document.getElementById("myH2");
+      h.style.position = "relative";
+    }
+
+  </script>
+
+  <script> // 20211125 Word-Floating
+    $(document).ready(function () {
+      $('float_word').animate({
+        left: '1000px',
+        fontSize: '20px',
+        opacity: 3
+      }, 2000);
+      $('move_').click(function () {
+        $(this).animate({
+          left: '+=50px'
+        }, 1000);
+      });
+    });
+  </script>
+
+  <script> // 20211125 : Click and show the word
+    $(document).ready(function () {
+      $('float_word.more').hide();
+      $('a.short').hide();
+      $('a.more2').click(function () {
+        $('float_word.more').show('slow');
+        $(this).hide();
+        $('a.more1').hide();
+        $('a.short').show();
+        return false;
+      });
+      $('a.short').click(function () {
+        $('float_word.more').hide('200');
+        $('a').show();
+        $(this).hide();
+        return false;
+      });
+    });
+  </script>
+
+  <script> // 滾輪
+    window.onload = function () {
+      var box_scroller = document.getElementById("box_scroller");
+      // HTML Element 中的scrollLeft 和 ScrollTop屬性
+      //box.scrollTop = 30;
+      window.setInterval(scroll, 50);
+    };
+    function scroll() {
+      box_scroller.scrollTop++;
+    }
+  </script>
+  <script> // 滾輪2
+    window2.onload = function () {
+      var box_scroller2 = document2.getElementById("box_scroller2");
+      // HTML Element 中的scrollLeft 和 ScrollTop屬性
+      //box.scrollTop = 30;
+      window2.setInterval(scroll, 50);
+    };
+    function scroll2() {
+      box_scroller2.scrollTop++;
+    }
+  </script>
+</head>
+
+<body>
+  <h2 id="myH2"> WeHelp Camp 申請<BR>
+    <a href="#" class="more2">
+      <move_>申請人 :</move_>
+    </a>
+  </h2>
+  <h2 id="myH2">
+    <float_word class="more">
+
+      <div class="title">林守為 SHOU-WEI,LIN<br>
+        <img src="../data/img/head2_.PNG" />
+
+      </div>
+  </h2>
+  </float_word>
+  <hr />
+
+
+  <div id="login">
+    <h3>
+      <float_word id="open">1.兩百字內的個人簡介 :</float_word>
+    </h3>
+    <form>
+      <div id="box_scroller" class="box">
+
+        澎澎老師您好, 我是David Lin 林守為, 畢業於中原大學電子工程學系, 畢業後曾在AIA人工智慧學校就讀精修AI演算法以及其實際應用
+        大概在4年前左右開始較頻繁接觸軟體的世界, 主要研究於資料科學(Data Analyze), AI機器學習(ML)深度學習(DL)以及電腦視覺應用的領域, 如資料分析,人臉偵測, 識別, 姿勢估計(Pose
+        Estimation).
+      </div>
+    </form>
+
+  </div>
+  <hr />
+
+  <!--===================================-->
+
+  <div id="login2">
+    <h3>
+      <float_word id="open2">2.為什麼想成為前端、後端、或全端工程師？ </float_word>
+    </h3>
+    <form>
+      <div id="box_scroller2" class="box">
+        職涯規劃, 自己最終嚮往是能將網業應用以及AI技術整合成未來有機會創業的Business.<br>
+        大學時曾買書(Dreamweaver5)去自學網頁前端(css, HTML5), 近期則是與多位自己創業的朋友聊天中,<br>
+        得知這個市場的需求不僅不小, 而且能直接性的幫助到身邊的朋友, 因此, 大概再半年前開始學習後端的技術<br>
+        目前的狀態已追完澎澎老師的Python後端課程(有訂閱已及追至最新), 也同時學習了 Javascript, Python Falsk, Django, 初步涉略 node.js, jQuery等技巧.
+
+      </div>
+    </form>
+  </div>
+  <hr />
+
+
+
+
+</body>
+
+</html>

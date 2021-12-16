@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Css 3 Animation</title>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/animation.css" />
+
+    <script>
+        function start() {
+            var text = document.getElementById("text"); // (!!大小寫注意!!!)取id : by getElementByID
+            text.classList.add("effect"); // 將effect效果佳入當中
+        }
+    </script>
+    <style type="text/css">
+        .effect {
+            animation: blink 5s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 0
+            }
+
+            50% {
+                opacity: 10
+            }
+
+            100% {
+                opacity: 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--設一個id text給javascript function使用-->
+    <div id="text">Hi Dear</div>
+    <button onclick="start();">start</button>
+</body>
+
+</html>
