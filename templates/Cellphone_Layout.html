@@ -10,71 +10,11 @@
 <head>
     <meta charset="utf-8">
     </meta>
-    <!--
-        縮放尺度固定1倍 : initial-scale=1
-        最大縮放尺度 : maximum-scale=1 
-    -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title> TypeSetting Template </title>
-
-    <!--
-        1.Top : 畫面頂部配置設定
-            - 字體放寬 : font-weight: bold;
-            - 字體大小 : font-size: 30px;
-            - 字體放中心 : text-align: center;
-
-        2.Content
-    -->
-    <style type="text/css">
-        .top {
-            background-color: #061853;
-            color: white;
-            font-weight: bold;
-            font-size: 30px;
-            text-align: center;
-            padding: 10px;
-        }
-
-        .content {
-            width: 1000px;
-            margin-left: auto;
-            margin-right: auto;
-            /* 模擬標題範圍框
-            border: 1px solid red;
-            height: 100px;*/
-        }
-
-        .box {
-            width: 280px;
-            padding: 10px;
-            margin: 10px;
-            /*background-color: white;*/
-            background-color: #292a2b;
-            color: #e6e6e6;
-            font-family: monospace;
-            display: inline-block;
-            vertical-align: top;
-            height: 150px;
-            text-align: center;
-            line-height: 30px;
-            font-size: 15px;
-        }
-
-        .title {
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        /*手機寬度設定 : 
-        概念 : 限制寬度(600px小於電腦一般的寬度)即能限制手機版面(電腦 : 左中右 -->手機 : 上中下)
-        */
-        @media screen and (max-width:600px) {
-            .content {
-                width: 100%;
-                text-align: center;
-            }
-        }
-    </style>
+    <!---->
+    <link rel="stylesheet" type="text/css" href="css/css_selector.css" />
 </head>
 
 <body style="margin:0px; background-color:#eeeeee">
@@ -83,7 +23,6 @@
         # B.Body背景底部顏色
         # C.
     -->
-
     <div class="top">
         David'S Self-Introduction
     </div>
@@ -103,7 +42,7 @@
             <div>* Scuba-Diving</div>
             <div>* Table Game</div>
         </div>
-        <div class="box">
+        <div class="box2">
             <div class="title">
                 Connect with me
             </div>
@@ -111,10 +50,8 @@
             <div><a href="https://github.com/wcsodw1">Github</a></div>
             <div><a href="https://www.linkedin.com/in/davidswlin-50963078/">LinkedIn</a></div>
         </div>
-
     </div>
     <h3></h3>
-
 </body>
 
 </html>

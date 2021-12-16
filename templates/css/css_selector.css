@@ -1,0 +1,81 @@
+/* 標籤名稱選擇器*/
+
+/* 3.class選擇器 */
+/*
+1.Top : 畫面頂部配置設定
+    - 字體放寬 : font-weight: bold;
+    - 字體大小 : font-size: 30px;
+    - 字體放中心 : text-align: center;
+
+2.Content :
+    - 縮放尺度固定1倍 : initial-scale=1
+    - 最大縮放尺度 : maximum-scale=1 
+*/
+
+.top {
+    background-color: #061853;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    /* 模擬標題範圍框
+    border: 1px solid red;
+    height: 100px;*/
+}
+
+.box {
+    width: 280px;
+    padding: 10px;
+    margin: 10px;
+    /*background-color: white;*/
+    background-color: #292a2b;
+    color: #e6e6e6;
+    font-family: monospace;
+    display: inline-block;
+    vertical-align: top;
+    height: 150px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    /*speak: literal-punctuation;*/
+    /* Reads all punctuation out loud in iOS VoiceOver */
+}
+.title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.box2 {
+    width: 280px;
+    padding: 10px;
+    margin: 10px;
+    /*background-color: white;*/
+    background-color: #292a2b;
+    color: #e6e6e6;
+    font-family: monospace;
+    display: inline-block;
+    vertical-align: top;
+    height: 150px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    /*speak: literal-punctuation;*/
+    /* Reads all punctuation out loud in iOS VoiceOver */
+}
+
+/*(!!!)手機寬度設定 : 
+概念 : 限制寬度(600px小於電腦一般的寬度)即能限制手機版面(電腦 : 左中右 -->手機 : 上中下)
+*/
+@media screen and (max-width:600px) {
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+}
