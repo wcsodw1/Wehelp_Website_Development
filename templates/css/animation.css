@@ -25,5 +25,5 @@
     background-color: red;*/
     opacity: 0.7;
     /*transition : 監控opacity屬性, 一但我們用javascript對opacity進行設定, 自動漸變處理*/
-    transition: opacity 1.5s; /*, background-color 1s*/
+    transition: opacity 1.5s, background-color 1s;
 }
