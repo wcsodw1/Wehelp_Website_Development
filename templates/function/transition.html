@@ -14,9 +14,11 @@
             //box.style.opacity = 1;
             box.addEventListener("mouseover", function () {
                 this.style.opacity = 1; //淡入
+                this.style.backgroundColor = "black";
             });
             box.addEventListener("mouseout", function () {
                 this.style.opacity = 0.5; //淡出
+                this.style.backgroundColor = "red";
             });
         };
     </script>
@@ -26,8 +28,8 @@
             height: 100px;
             background-color: red;
             opacity: 0.5;
-            /*transition : 監控opacity屬性, 一但我們用javascript對opacity進行設定, 自動漸變處理*/
-            transition: opacity 1s;
+            /*(重點!!)transition : 監控opacity屬性, 一但我們用javascript對opacity進行設定, 自動漸變處理*/
+            transition: opacity 1s, background-color 1s;
         }
     </style>
 </head>
