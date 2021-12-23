@@ -1,0 +1,51 @@
+<!--
+    A.網頁切版的關鍵思考 : 
+    針對區塊型(block)標籤(div!!)作配置
+    問題1 : 直向排列 > 橫向排列
+    問題2 : 水平對齊
+    問題3 : 垂直對齊
+
+    B.Flexbox的核心設定 : 
+    1.將容器中的項目並排(如何把直向排列變成橫向排列) : 水平排列容器中的一到多個項目
+    2.決定項目的寬度配置 : 固定寬度, 彈性縮放配置
+    3.多層次的結構 : 每個層次都要獨立看待, 處理
+
+    C.對齊方式 : 
+    1.水平對齊 : 在容器上使用Justify-content屬性
+    2.垂直對齊 : 在容器上使用align-items屬性 
+    3.完美置中 : 同時水平和垂直置中(Justify-content:center, align-items:center)
+
+-->
+
+<!--Tutorial-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0"> <!-- 控制版面縮放 不讓版面隨意縮放-->
+    <meta charset="utf-8" /> <!-- 萬國碼 : 可打中文-->
+    <title>Flexbox 網頁切版</title>
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+    <!--link : 連結css-->
+
+
+</head>
+
+<body>
+    <div class="frame">
+        <div class="left">網站標題</div>
+        <div class="right">
+            <div class="item">選項 A</div>
+            <div class="item">選項 B</div>
+            <div class="item">選項 C</div>
+        </div>
+    </div>
+    <div class="welcome">
+        <div class="text">歡迎光臨</div>
+    </div>
+    <div><a href="https://www.youtube.com/watch?v=xbJPFMCiLHM">Youtube教學影片 : CSS Flexbox 網頁切版技巧</a></div>
+
+</body>
+
+</html>
